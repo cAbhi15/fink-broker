@@ -83,7 +83,7 @@ LOG_LEVEL=INFO
 
 # If set to false, it will assume the fink_broker is in your PYTHONPATH
 # otherwise it will package it, and send it to the executors.
-DEPLOY_FINK_PYTHON=false
+DEPLOY_FINK_PYTHON=true
 
 ######################################
 # Dashboard
