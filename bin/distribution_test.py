@@ -57,6 +57,7 @@ def main():
         .option("kafka.bootstrap.servers", broker_list) \
         .option("kafka.security.protocol", "SASL_PLAINTEXT")\
         .option("kafka.sasl.mechanism", "SCRAM-SHA-512")\
+        .option('failOnDataLoss', True)\
         .option("subscribe", topic) \
         .load()
 
