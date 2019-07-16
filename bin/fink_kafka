@@ -214,14 +214,15 @@ case "$1" in
       --operation Describe \
       --topic fink_outstream \
 
-      ${KAFKA_HOME}/bin/kafka-acls.sh \
-      --authorizer-properties "zookeeper.connect=${ZK_IPPORT}" \
-      --add \
-      --allow-principal User:finkConsumer \
-      --allow-host 127.0.0.1 \
-      --operation Read \
-      --group spark-kafka \
-      --resource-pattern-type prefixed
+      # ${KAFKA_HOME}/bin/kafka-acls.sh \
+      # --authorizer-properties "zookeeper.connect=${ZK_IPPORT}" \
+      # --add \
+      # --allow-principal User:finkConsumer \
+      # --allow-host 127.0.0.1 \
+      # --consumer \
+      # --topic fink_outstream \
+      # --group spark-kafka- \
+      # --resource-pattern-type prefixed
 
       # Start Kafka Servers / Brokers
       declare -a kafka_pids
